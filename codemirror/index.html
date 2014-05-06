@@ -1,7 +1,6 @@
-<Head:>
-  <view name="d-codemirror:includes" static='/cm'></view>
-  <view name="d-showdown:includes" static='/showdown'></view>
-  <script src="/md/markdown.js"></script>
+<Styles:>
+  <view name="d-codemirror:include-head" static="/cm" />
+
 <Body:>
   <!--Templates define both HTML and model-view bindings-->
   <h2>CodeMirror Example</h2>
@@ -13,4 +12,6 @@
     <div as="md"></div>
     {{markdown(_page.markdown)}}
   </div>
-
+  <view name="d-showdown:include-scripts" static="/showdown" />
+  <view name="d-codemirror:include-scripts" static="/cm" />
+  <script src="/md/markdown.js"></script>

@@ -9,12 +9,13 @@
     "url": "git://github.com/codeparty/derby-examples.git"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node server.js"
   },
   "dependencies": {
     "coffee-script": "~1.7.1",
-    "derby": "~0.6",
-    "derby-starter": "~0.1.0",
+    "derby": "git+https://github.com/codeparty/derby.git",
+    "derby-starter": "git+https://github.com/codeparty/derby-starter.git",
     "express": "~3.4.8",
     "d-connection-alert": "~0.1.0",
     "d-before-unload": "~0.1.0",
@@ -22,8 +23,8 @@
     "d-barchart": "~0.1.0",
     "d-barchart-vanilla": "~0.1.0",
     "d-d3-barchart": "~0.1.0",
-    "d-codemirror": "~0.1.0",
-    "d-showdown": "~0.1.0"
+    "d-codemirror": "git+https://github.com/codeparty/d-codemirror.git",
+    "d-showdown": "git+https://github.com/codeparty/d-showdown.git"
   },
   "optionalDependencies": {},
   "devDependencies": {},
