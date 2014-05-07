@@ -23,7 +23,7 @@ expressApp
   .use(express.vhost('chat.derbyjs.com', derbyStarter.setup(require('./chat'), {static: __dirname + '/chat/public'}) ))
   .use(express.vhost('directory.derbyjs.com', derbyStarter.setup(require('./directory')) ))
   .use(express.vhost('hello.derbyjs.com', derbyStarter.setup(require('./hello')) ))
-  .use(express.vhost('sink.derbyjs.com', derbyStarter.setup(require('./sink/src')) ))
+  //.use(express.vhost('sink.derbyjs.com', derbyStarter.setup(require('./sink/src')) ))
   .use(express.vhost('todos.derbyjs.com', derbyStarter.setup(require('./todos')) ))
   .use(express.vhost('widgets.derbyjs.com', derbyStarter.setup(require('./widgets')) ))
 

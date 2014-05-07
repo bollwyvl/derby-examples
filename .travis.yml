@@ -1,6 +1,5 @@
 language: node_js
 node_js:
-  - "0.11"
   - "0.10"
 services:
   - mongodb
@@ -12,4 +11,10 @@ before_script:
   - npm start
   - sleep 3
 addons:
-  hosts: derbyjs.com
+  hosts:
+    - chat.derbyjs.com
+    - directory.derbyjs.com
+    - hello.derbyjs.com
+    - sink.derbyjs.com
+    - todos.derbyjs.com
+    - widgets.derbyjs.com
