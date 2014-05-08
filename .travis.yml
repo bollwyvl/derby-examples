@@ -6,7 +6,7 @@ services:
   - redis-server
 before_script:
   - npm start &
-  - sleep 3
+  - sleep 5
 addons:
   hosts:
     - chat.derbyjs.com
@@ -16,3 +16,4 @@ addons:
     - todos.derbyjs.com
     - widgets.derbyjs.com
     - codemirror.derbyjs.com
+
