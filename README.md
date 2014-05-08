@@ -31,6 +31,12 @@ http://hello.derbyjs.com/
 
 Hello world example.
 
+### Codemirror
+
+http://codemirror.derbyjs.com/
+
+Live editing and rendering of Markdown.
+
 ## Installing
 
 **Warning:** Master of this repo is now based on Derby 0.6. 0.6 is stil incomplete and has bugs. It is not documented yet. The currently published version of Derby is 0.5.16.
@@ -57,6 +63,9 @@ $ npm install -g coffee-script
 $ cd ~/derby-examples/sink
 $ coffee server.coffee
 ```
+
+## Testing
+
 
 ## MIT License
 Copyright (c) 2011 by Brian Noguchi and Nate Smith

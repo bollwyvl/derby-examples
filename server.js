@@ -25,7 +25,7 @@ expressApp
   .use(express.vhost('hello.derbyjs.com', derbyStarter.setup(require('./hello')) ))
   //.use(express.vhost('sink.derbyjs.com', derbyStarter.setup(require('./sink/src')) ))
   .use(express.vhost('todos.derbyjs.com', derbyStarter.setup(require('./todos')) ))
-  .use(express.vhost('codemirror.derbyjs.com', derbyStarter.setup(require('./codemirror')) ))
+  .use(express.vhost('codemirror.derbyjs.com', derbyStarter.setup(require('./codemirror'), {static: require('./codemirror/static')}) ))
   .use(express.vhost('widgets.derbyjs.com', derbyStarter.setup(require('./widgets')) ))
 
 server.listen(port, function() {
