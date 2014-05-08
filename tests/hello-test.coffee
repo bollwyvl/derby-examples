@@ -1,5 +1,5 @@
 # TODO: make this configurable?
-url = (example) -> "http://#{example}.derbyjs.com:3000"
+url = (example) -> "http://#{example}.derbyjs.com:3000/"
 
 count = (selector) ->
   _ = (selector) -> document.querySelectorAll(".message").length
