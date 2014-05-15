@@ -19,7 +19,7 @@ describe "The example", ->
       done()
 
   describe "hello", ->
-    before -> casper.start url "hello"
+    before -> casper.start "http://localhost:3000/"
     after -> casper.then -> @clear()
       
     it "should have a title", (done) ->

@@ -9,7 +9,7 @@
     "url": "git://github.com/codeparty/derby-examples.git"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node hello/server.js",
     "test": "./node_modules/mocha-casperjs/bin/mocha-casperjs"
   },
   "dependencies": {
