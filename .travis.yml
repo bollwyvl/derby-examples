@@ -5,6 +5,7 @@ services:
   - mongodb
   - redis-server
 before_script:
+  - "phantomjs --version"
   - "npm start &"
   - "sleep 10"
   - "curl http://hello.derbyjs.com:3000/"
