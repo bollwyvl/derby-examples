@@ -28,11 +28,11 @@
   },
   "optionalDependencies": {},
   "devDependencies": {
-    "casperjs": "^1.1.0-beta3",
-    "casper-chai": "^0.2.1",
-    "chai": "^1.9.1",
-    "mocha": "^1.18.2",
-    "mocha-casperjs": "^0.4.4"
+    "casperjs": "*",
+    "casper-chai": "*",
+    "chai": "*",
+    "mocha": "*",
+    "mocha-casperjs": "*"
   },
   "engines": {
     "node": "0.10.x"
