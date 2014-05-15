@@ -5,10 +5,11 @@ services:
   - mongodb
   - redis-server
 before_script:
-  - npm start &
-  - sleep 10
+  - "npm start &"
+  - "curl http://hello.derbyjs.com:3000"
+  - "sleep 10"
 after_script:
-  - cat reqlog.txt
+  - "cat reqlog.txt"
 addons:
   hosts:
     - chat.derbyjs.com
