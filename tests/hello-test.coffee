@@ -7,6 +7,12 @@ count = (selector) ->
 
 
 describe "The example", ->
+  page_errors = []
+  casper.start "about:blank", ->
+    casper.then ->
+      casper.on "page.error", (msg, trace) ->
+        page_errors.push [msg, trace]
+
   afterEach (done) ->
     casper.then ->
       @debugHTML "body"
@@ -33,7 +39,11 @@ describe "The example", ->
             done()
           @fillSelectors "body", input: txt
         @fillSelectors "body", input: txt
+        
+    it "should have no page errors", ->
+      page_errors.should.deep.equal []
 
+  return
 
   describe "chat", ->
     before -> casper.start url "chat"
