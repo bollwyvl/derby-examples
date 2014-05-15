@@ -6,8 +6,8 @@ services:
   - redis-server
 before_script:
   - "npm start &"
-  - "curl http://hello.derbyjs.com:3000"
   - "sleep 10"
+  - "curl http://hello.derbyjs.com:3000/"
 after_script:
   - "cat reqlog.txt"
 addons:
