@@ -14,6 +14,7 @@ describe "The example", ->
 
   describe "hello", ->
     before -> casper.start url "hello"
+    after -> casper.then -> @clear()
       
     it "should have a title", (done) ->
       casper.then ->
@@ -36,6 +37,7 @@ describe "The example", ->
 
   describe "chat", ->
     before -> casper.start url "chat"
+    after -> casper.then -> @clear()
       
     it "should have a title", (done) ->
       casper.then ->
@@ -62,6 +64,7 @@ describe "The example", ->
 
   describe "directory", ->
     before -> casper.start url "directory"
+    after -> casper.then -> @clear()
       
     it "should have a title", (done) ->
       casper.then ->
@@ -71,6 +74,7 @@ describe "The example", ->
 
   describe "todos", ->
     before -> casper.start url "todos"
+    after -> casper.then -> @clear()
       
     it "should have a title", (done) ->
       casper.then ->
@@ -80,6 +84,7 @@ describe "The example", ->
 
   describe "widgets", ->
     before -> casper.start url "widgets"
+    after -> casper.then -> @clear()
       
     it "should have a title", (done) ->
       casper.then ->
@@ -89,6 +94,7 @@ describe "The example", ->
 
   describe "codemirror", ->
     before -> casper.start url "codemirror"
+    after -> casper.then -> @clear()
       
     it "should have a title", (done) ->
       casper.then ->
